@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Keycaps - Michy's Faves!</title>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="youtube.html">YouTube</a></li>
+            <li><a href="keyboards.html">Keyboards</a></li>
+            <li><a href="keycaps.html">Keycaps</a></li>
+            <li><a href="switches.html">Key Switches</a></li>
+        </ul>
+    </head>
+
+    <body>
+        <h1>Michy's Favorite Keycaps</h1>
+        <audio src="happysummer.mp3" id="audio"></audio>
+        <h4 id="musicstatus">Play me to try a new set of good vibes!</h4>
+        <button onClick="playmusic()" type="button" class="center">Play: I want try some new good vibes!</button>
+        <button onClick="pausemusic()" type="button" class="center">Click me to pause :)</button>
+        <script>
+            function playmusic(){
+                document.getElementById("audio").play();
+                document.getElementById("musicstatus").innerHTML="Music currently playing!";
+            }
+            function pausemusic(){
+                document.getElementById("audio").pause();
+                document.getElementById("musicstatus").innerHTML="Music currently paused";
+            }
+        </script>
+
+        <article>
+            <br>
+                <h4>1. Chinese Love Story: A Work of Art</h4>
+            <figure>
+                <img src="chinesekeycaps.jpg" 
+                alt="Chinese-Themed Keycaps"
+                width="50%"
+                class="center">
+                <figcaption class="center">Picture of the Chinese-themed keycaps I purchased from Amazon!</figcaption>
+            </figure>
+            <h5>First of all, these keycaps look amazing. The art was what drew me to this set. I really like Chinese-themed
+                art, and the color scheme makes it all the more outstanding. These keycaps are also PBT material, which is really
+                durable. The OEM profile is the standard key profile, which I actually prefer the most. However, these keycaps are
+                are particularly thoccy. The spacebar is also taller and thicker than standard OEM spacebars, giving it a nice, deep 
+                sound. My cup of tea!
+                <br>
+                <a href="https://www.amazon.com/Keycaps-Switches-Mechanical-Keyboard-Chinese/dp/B088GRZSP3/" target="_blank" rel="noopener noreferrer">Link to Amazon page (not sponsored)</a>
+            </h5>
+        </article>
+
+        <article>
+            <br>
+                <h4>2. GMK Milkyway Demon Girl: Enticingly Adorable</h4>
+            <figure>
+                <img src="demongirl.jpg" 
+                alt="Milkyway Demon Girl"
+                width="50%"
+                class="center">
+                <figcaption class="center">A picture of the GMK Milkway Demon Girl keycaps taken from the original GeekHack thread: <a href="https://geekhack.org/index.php?topic=111864.0"></a></figcaption>
+            </figure>
+            <h5>I really like this set of keycaps, but unfortunately, I wasn't able to get my hands on it. GMK keycaps are one of the
+                higher-end brands of keycaps, so even just the base kit went for $90. This set is gorgeous though, with a color complement
+                akin to the GMK Olivia++ keycap set! I also really like the novelties included :)
+                <br>
+                <a href="https://geekhack.org/index.php?topic=114827.0" target="_blank" rel="noopener noreferrer">Link to GeekHack thread about vendors</a>
+            </h5>
+        </article>
+    </body>
+</html>
